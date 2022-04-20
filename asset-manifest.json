@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/devChallenges-checkout-page/static/css/main.073c9b0a.css",
-    "main.js": "/devChallenges-checkout-page/static/js/main.7ab18110.js",
+    "main.css": "/devChallenges-checkout-page/static/css/main.11e67abe.css",
+    "main.js": "/devChallenges-checkout-page/static/js/main.c815f602.js",
     "static/js/787.94f29a51.chunk.js": "/devChallenges-checkout-page/static/js/787.94f29a51.chunk.js",
-    "static/media/logo.svg": "/devChallenges-checkout-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/photo1.png": "/devChallenges-checkout-page/static/media/photo1.ccd07023cfae57f3aa97.png",
+    "static/media/photo2.png": "/devChallenges-checkout-page/static/media/photo2.558ae6ee3d8b4fc7e652.png",
     "index.html": "/devChallenges-checkout-page/index.html",
-    "main.073c9b0a.css.map": "/devChallenges-checkout-page/static/css/main.073c9b0a.css.map",
-    "main.7ab18110.js.map": "/devChallenges-checkout-page/static/js/main.7ab18110.js.map",
+    "main.11e67abe.css.map": "/devChallenges-checkout-page/static/css/main.11e67abe.css.map",
+    "main.c815f602.js.map": "/devChallenges-checkout-page/static/js/main.c815f602.js.map",
     "787.94f29a51.chunk.js.map": "/devChallenges-checkout-page/static/js/787.94f29a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7ab18110.js"
+    "static/css/main.11e67abe.css",
+    "static/js/main.c815f602.js"
   ]
 }
