@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+$gray-1: #333;
+$gray-2: #4f4f4f;
+$gray-3: #828282;
+$gray-4: #4e5150;
+$gray-5: #e0e0e0;
+$gray-6: #f2f2f2;
+$orange: #f2994a;
+$footer: #bdbdbd;
+
+/* TABLE OF CONTENT */
+/* ==||    1. GLOBAL STYLES     ||== */
+/* ==||    2. TYPOGRAPHY        ||== */
+/* ==||    3. LAYOUT            ||== */
+/* ==||    4. OBJECTS           ||== */
+/* ==||    5. COMPONENTS        ||== */
+/* ==||    6. MEDIA QUERIES     ||== */
+
+/* ==========||        1. GLOBAL STYLES         ||========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 70vw;
+    margin-inline: auto;
+    height: 100vh;
+}
+
+body,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+button {
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: $orange;
+    border: none;
+    width: 16.6rem;
+    height: 5.4rem;
+    border-radius: 1.2rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 2.4rem;
+
+    &__text,
+    &__link {
+        font-size: 1.4rem;
+        color: $footer;
+    }
+}
+
+.form-container {
+    margin-inline: auto;
+    margin-top: 16rem;
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        font-size: 1.2rem;
+        color: $gray-2;
+        position: relative;
+    }
+
+    &__input {
+        color: #333;
+        width: 46.5rem;
+        padding-left: 4.8rem;
+    }
+
+    .country-container {
+        display: flex;
+        justify-content: space-between;
+
+        .form__country-menu {
+            padding-left: 4.8rem;
+            z-index: 2;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        &__item {
+            width: 22rem;
+        }
+    }
+
+    &__checkbox {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .save-info {
+        flex-direction: row;
+        gap: 1.2rem;
+        align-items: center;
+        font-size: 1.2rem;
+        color: $gray-2;
+    }
+
+    .material-icons {
+        color: $gray-3;
+        position: absolute;
+        top: 3.5rem;
+        left: 1.4rem;
+    }
+
+    .expand {
+        left: 18.4rem;
+        background-color: $gray-5;
+        border-radius: 0.4rem;
+        z-index: 0;
+    }
+}
+
+option:checked {
+    color: $gray-1;
+}
+
+.summary {
+    background-color: $gray-6;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 38.3rem;
+    height: 53.5rem;
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    &__total {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: $gray-3;
+        }
+
+        .total-costs {
+            display: flex;
+            justify-content: space-between;
+
+            & p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 13.5rem;
+    border-radius: 1rem;
+}
+
+.product {
+    display: flex;
+    gap: 1.6rem;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+    }
+
+    .newPrice {
+        font-size: 1.6rem;
+        color: $orange;
+    }
+
+    .oldPrice {
+        font-size: 1.2rem;
+        text-decoration: line-through;
+    }
+
+    &__amount {
+        background-color: $gray-6;
+        width: 13.5rem;
+        text-align: center;
+    }
+
+    .material-icons {
+        color: $gray-3;
+        position: absolute;
+    }
+
+    .remove,
+    .add {
+        bottom: 1.4rem;
+        background-color: $gray-5;
+        border-radius: 0.4rem;
+    }
+
+    .remove {
+        left: 1.4rem;
+    }
+
+    .add {
+        // right: 1.8rem;
+        left: 9.8rem;
+    }
+
+    .up {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+/* ==========||        2. TYPOGRAPHY            ||========== */
+
+h1 {
+    font-size: 3.6rem;
+    color: $gray-4;
+    position: absolute;
+    top: -10rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: $gray-1;
+}
+
+input,
+select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border: 1px solid #828282;
+    border-radius: 1.2rem;
+}
+
+.your-country {
+    color: $gray-3;
+}
+
+select,
+select option {
+    color: #333;
+}
+
+select:invalid,
+select option[value=''] {
+    color: $gray-3;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* ==========||        3. LAYOUT                ||========== */
+/* ==========||        4. OBJECTS               ||========== */
+/* ==========||        5. COMPONENTS            ||========== */
+/* ==========||        6. MEDIA QUERIES         ||========== */

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Form from './components/Form';
+import Summary from './components/Summary';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='wrapper'>
+            <main>
+                <div className='form-container'>
+                    {Form()}
+                    {Summary()}
+                </div>
+            </main>
+            <footer className='footer'>
+                <p className='footer__text'>
+                    created by{' '}
+                    <a
+                        href='https://github.com/ChadlyRiedewald'
+                        className='footer__link'
+                    >
+                        ChadlyRiedewald
+                    </a>{' '}
+                    - devChallenges.io
+                </p>
+            </footer>
+        </div>
+    );
 }
 
 export default App;
